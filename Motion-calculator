@@ -1,0 +1,18 @@
+formula=input("speed/time/distance:")
+if formula=="speed":
+    distance=float(input("enter the distance:"))
+    time=float(input("enter the time:"))
+    speed=distance/time
+    print("speed =",speed)
+elif formula=="time":
+    distance=float(input("enter the distance:"))
+    speed=float(input("enter the speed:"))
+    time=distance/speed
+    print("time=",time)
+elif formula=="distance":
+    speed=float(input("enter the speed:"))
+    time=float(input("enter the time:"))
+    distance=speed*time
+    print("distance=",distance)
+else:
+    print("Invalid formula:")
